@@ -1,0 +1,13 @@
+name: harmonica
+type: theme
+description: 'Main Harmonica Bridge theme.'
+core: 8.x
+libraries:
+  - harmonica/global-styling
+base theme: classy
+regions:
+  header: Header
+  content: Content
+  front_content: Front-page-content
+  front_content_low: Front-page-content-bottom
+  footer: Footer

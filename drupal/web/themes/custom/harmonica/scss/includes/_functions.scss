@@ -1,0 +1,31 @@
+@function rem($px) {
+  $font-size: $px / $baseFontSize;
+  @return #{$font-size}rem;
+}
+
+@mixin rwd($screen) {
+  @media (min-width: $screen+'px') {
+    @content;
+  }
+}
+
+
+@function __noop($args...) {
+  @return null;
+}
+
+
+/// A no-operation function which returns `null` regardless of the
+/// arguments it receives.
+///
+///
+/// @access public
+/// @group Utility
+/// @example scss
+/// $map: ( 'user': 'fred' );
+/// $foo: _noop($map) == null;
+/// // => true
+
+@function noop($args...) {
+  @return call('__noop', $args...);
+}

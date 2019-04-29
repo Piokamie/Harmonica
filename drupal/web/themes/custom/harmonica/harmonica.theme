@@ -1,0 +1,18 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Piotras
+ * Date: 2019-03-02
+ * Time: 15:43
+ */
+
+function harmonica_preprocess_node(&$variables) {
+
+ $nid = $variables['node']->id();
+
+ if($nid == 16) {
+   $variables['#attached']['library'][]= 'harmonica/awards-slider';
+
+ }
+
+}

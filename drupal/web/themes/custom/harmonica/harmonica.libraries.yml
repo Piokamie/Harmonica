@@ -1,0 +1,23 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      css/style.css: {}
+      css/slick.css: {}
+  js:
+    js/libraries/ScrollMagic.min.js: {}
+    js/menu.js: {}
+    js/sliders-frontpage.js: {}
+    js/slick.min.js: {}
+    js/animations.js: {}
+
+  dependencies:
+    - core/jquery
+    - animate_css/animate
+
+awards-slider:
+  version: 1.x
+  js:
+    js/awards-slider.js: {}
+  dependencies:
+    - harmonica/global-styling
